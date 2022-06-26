@@ -1,0 +1,153 @@
+.container {
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 1000px;
+  min-width: 768px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: -1.5rem;
+}
+
+.wrapper form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.inputTask {
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  padding: 1rem;
+  color: var(--gray-300);
+  outline: 0;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.wrapper form > button {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: var(--blueDark);
+  border: 0;
+  border-radius: 8px;
+  color: var(--gray-100);
+  gap: 0.5rem;
+  cursor: pointer;
+
+  transition: background 0.2s;
+}
+
+.wrapper form > button:hover {
+  background: var(--blue);
+}
+
+.taskInfos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.createdTaskInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.createdTaskInfo > span {
+  font-size: 0.875rem;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.createdTaskInfo > p {
+  color: var(--gray-200);
+  background: var(--gray-400);
+  font-weight: bold;
+
+  padding: 0.125rem 0.5rem;
+  border-radius: 16px;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.doneTaskInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.doneTaskInfo > span {
+  font-size: 0.875rem;
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.doneTaskInfo > p {
+  color: var(--gray-200);
+  background: var(--gray-400);
+  font-weight: bold;
+
+  padding: 0.125rem 0.5rem;
+  border-radius: 16px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.emptyTasks {
+  border-radius: 8px;
+  border-top: 1px solid var(--gray-300);
+  width: 100%;
+  padding: 4rem 1.5rem; 
+  margin-top: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emptyTasks > img {
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.emptyTasks > strong {
+  color: var(--gray-300);
+  line-height: 1.6;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.emptyTasks > span {
+  color: var(--gray-300);
+  line-height: 1.6;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.tasks {
+  width: 100%;
+  margin-top: 1.5rem;
+}
